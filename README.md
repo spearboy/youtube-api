@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# youtube API를 이용한 음악 사이트
+- 음악 감상을 즐기는 사용자로서, YouTube API를 활용하여 음악 사이트를 구축하기로 했습니다. 이를 위해 다음과 같은 작업 절차를 따르며, 필요한 라이브러리를 설치하고 트러블 슈팅을 해나갔습니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 작업 순서
+1. node.js 설치 / 버전 확인
+2. 폴더 세팅 : 필요없는 파일 제거
 
-## Available Scripts
+## 필요한 라이브러리 설치
+- react설치 `npm create-react-app 폴더이름` : 폴더를 생략하고 싶으면 . 으로 대체
+- react-router-dom 설치 `npm install react-router-dom` : 주소를 설정하기 위한 라이브러리
+- axios 설치 `npm install axios` : API 라이브러리
+- react-icon 설치 `npm install react-icons` : 리액트에 필요한 아이콘
+- react-player 설치 `npm install react-player` : 유튜브 영상 재생
+- sass 설치 `npm install sass` : css 라이브러리 sass 설치
+- react-helmet-async 설치 `npm install react-helmet-async` : React 앱의 HTML 헤드를 관리
+- swiper 설치 `npm install swiper` : 이미지 슬라이드
 
-In the project directory, you can run:
+## 사용 스텍
+- node.js 설치
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 트러블 슈팅
+- node.js 설치시 폴더 인식 에러:
+    - 에러 경로에 타겟 폴더 생성 
